@@ -20,16 +20,16 @@ entities:
         type: integer
         unit: C
         range:
-          min: 7
+          min: 5
           max: 30
         mapping:
           - constraint: preset_mode
             conditions:
-              - dps_val: antifrost
-                value: 7
+              - dps_val: af
+                value: 5
                 range:
-                  min: 7
-                  max: 7
+                  min: 5
+                  max: 5
       - id: 3
         name: current_temperature
         type: integer
@@ -41,7 +41,7 @@ entities:
             value: eco
           - dps_val: high
             value: boost
-          - dps_val: antifrost
+          - dps_val: af
             value: away
   - entity: binary_sensor
     class: problem
